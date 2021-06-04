@@ -14,7 +14,7 @@ contract Allowance is Ownable {
      event moneyWithdrawn (address _to, uint _amount);
      
      modifier checkAllowance () {
-         require(allowanceAmount[msg.sender] >= msg.value, "You're trying to spend more money than in your allowance");
+         require(allowanceAmount[msg.sender] >= msg.value, "Youre trying to spend more money than in your allowance");
          _;
      }
      
